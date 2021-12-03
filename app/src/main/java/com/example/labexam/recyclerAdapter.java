@@ -46,7 +46,9 @@ public class recyclerAdapter<index> extends RecyclerView.Adapter<recycler> {
 
     @Override
     public void onBindViewHolder(@NonNull recycler recycler, int i) {
-        final index = recycler.getAdapterPosition();
+        final int index = recycler.getAdapterPosition();
+
+
         recycler.Image
                 .setImageResource(list.get(i).Image);
 

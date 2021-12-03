@@ -1,28 +1,18 @@
 package com.example.labexam;
 
 public class data {
-    public String getText() {
-        return text;
+
+    public data(int imamgeurl) {
+        this.imamgeurl = imamgeurl;
     }
 
-    public void setText(String text) {
-        this.text = text;
-    }
-
-    public String getImamgeurl() {
+    public int getImamgeurl() {
         return imamgeurl;
     }
 
-    public void setImamgeurl(String imamgeurl) {
+    public void setImamgeurl(int imamgeurl) {
         this.imamgeurl = imamgeurl;
     }
 
-    String text;
-
-    public data(String text, String imamgeurl) {
-        this.text = text;
-        this.imamgeurl = imamgeurl;
-    }
-
-    String imamgeurl;
+    int imamgeurl;
 }

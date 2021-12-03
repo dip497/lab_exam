@@ -1,6 +1,7 @@
 package com.example.labexam;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
@@ -18,11 +19,16 @@ public class MainActivity extends AppCompatActivity {
         recyclerAdapter adapter;
 
 
-        List<recycler> list = new ArrayList<>();
-        list =  data();
+        List<data> list = new ArrayList();
+        list.add(new data(R.drawable.a));
+        list.add(new data(R.drawable.b));
 
         adapter  = new recyclerAdapter(
-                list,getApplication()
-        )
+                list,getApplication());
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(
+                new LinearLayoutManager(MainActivity.this)
+        );
     }
+
 }
