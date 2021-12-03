@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.Collections;
 import java.util.List;
 
-public class recyclerAdapter extends RecyclerView.Adapter<recycler> {
+public class recyclerAdapter<index> extends RecyclerView.Adapter<recycler> {
     List<recycler> list
             = Collections.emptyList();
 
